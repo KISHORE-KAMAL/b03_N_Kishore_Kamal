@@ -1,0 +1,153 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+html,body
+{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.box
+{
+    border: 2px solid rgba(211, 211, 211, 0.617);
+    height: 500px;
+    width: 440px;
+    margin: 60px auto;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+.box .tabs
+{
+    /* border: 1px solid red; */
+    padding: 6px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(223, 218, 218, 0.79);
+}
+.box .tabs .tab
+{
+    /* border: 1px solid blue; */
+    width: 50%;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(70, 68, 68);
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms ease-in-out 0ms;
+}
+.box .tabs .active
+{
+    background-color: white;
+}
+
+.box .box-details
+{
+    /* border: 1px solid red; */
+    padding: 4px 20px;
+}
+
+.box .toggle-box > div
+{
+    position: absolute;
+    top: -150vh;
+    opacity: 0;
+    width: 100%;
+}
+.box .toggle-box 
+{
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
+}
+.box .toggle-box > div.active
+{
+    top: 0px;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out 0ms;
+}
+
+.box .box-details .numbers
+{
+    /* border: 1px solid blue; */
+    padding: 4px;
+    font-size: 14px;
+    color: rgb(161, 158, 158);
+}
+.box .box-details .btn button
+{
+    border: 1px solid rgb(60, 57, 57);
+    width: 100%;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(rgba(44, 44, 49, 0.782),rgba(54, 54, 59, 0.787),rgba(62, 62, 67, 0.884),rgb(63, 63, 69));
+    margin-top: 10px;
+    cursor: pointer;
+}
+.lists .list
+{
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    gap: 14px;
+    padding: 4px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.lists .list:hover
+{
+    background-color: rgba(161, 158, 158, 0.112);
+}
+.lists .list .list-image img
+{
+    /* border: 1px solid rgb(47, 245, 255); */
+    height: 44px;
+    border-radius: 50%;
+}
+.lists .list .list-details
+{
+    /* border: 1px solid rgb(255, 47, 189); */
+    width: 240px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.lists .list .list-details h4
+{
+    font-size: 16px;
+}
+.lists .list .list-details p
+{
+    font-size: 16px;
+    color: rgb(149, 145, 145);
+}
+.lists .list .list-button
+{
+    /* border: 1px solid rgb(255, 95, 47); */
+    margin: auto;
+}
+.lists .list .list-button button
+{
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    /* border: none; */
+    outline: none;
+    border: 2px solid rgba(73, 69, 69, 0.617);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 1px 0px;
+    background-color: white;  
+    display: flex;
+    gap: 6px; 
+}
